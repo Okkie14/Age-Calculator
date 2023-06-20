@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Age calculator app</title>
+
+  <!-- Link to CSS -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Link to fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;0,800;1,400;1,700;1,800&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <main>
+    <section class="main-container">
+      <!-- Input section user to add DOB -->
+      <section class="input-container">
+        <div class="day-container containers">
+          <label for="days" class="day">Day</label>
+          <input type="text" value="" id="days" placeholder="DD" required maxlength="2">
+          <span id="day-empty" class="hidden">This field is required</span>
+          <span id="day-error" class="hidden">Must be a valid day</span>
+        </div>
+        <div class="month-container containers">
+          <label for="months" class="month">Month</label>
+          <input type="text" value="" id="months" placeholder="MM" maxlength="2" required>
+          <span id="month-empty" class="hidden">This field is required</span>
+          <span id="month-error" class="hidden">Must be a valid month</span>
+        </div>
+        <div class="year-container containers">
+          <label for="years" class="year">Year</label>
+          <input type="text" value="" id="years" placeholder="YYYY" maxlength="4" required>
+          <span id="year-empty" class="hidden">This field is required</span>
+          <span id="year-error" class="hidden">Must be in the past</span>
+        </div>
+      </section>
+      <section class="section-button">
+        <div class="btn-position">
+          <hr>
+          <button type="button" id="submit" class="btn btn-primary">
+            <img src="./assets/images/icon-arrow.svg" >
+          </button>
+        </div> 
+      </section>
+      <!-- Output section gives user their year, months and days -->
+      <section class="output-container">
+        <p><span id="output-years" class="output" data-val=""></span> years</p>
+        <p><span id="output-months" class="output" data-val=""></span> months</p>
+        <p><span id="output-days" class="output" data-val=""></span> days</p>
+      </section>
+    </section>
+  </main>
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/Okkie14" target="_blank">Okkert Joubert</a>.
+  </footer>
+</body>
+<script src="./script.js"></script>
+</html>

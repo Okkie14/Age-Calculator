@@ -1,0 +1,292 @@
+:root {
+    --purple: hsl(259, 100%, 65%);
+    --light-red: hsl(0, 100%, 67%);
+
+    --white: hsl(0, 0%, 100%);
+    --off-white: hsl(0, 0%, 94%);
+    --light-grey: hsl(0, 0%, 86%);
+    --smokey-grey: hsl(0, 1%, 44%);
+    --off-black: hsl(0, 0%, 8%);
+
+    --fs: 16px;
+
+    --ff: 'Poppins', sans-serif;
+    --fw-normal: 400;
+    --fw-bold: 700;
+    --fw-very-bold: 800;
+
+    --f-normal: normal;
+    --f-italic: italic;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  font-size: var(--fs);
+  font-style: var(--f-normal);
+  font-family: var(--ff);
+  background-color: var(--off-white);
+}
+/*
+  5. Improve media defaults
+*/
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input, button, textarea, select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+
+.main-container {
+    width: 90%;
+    margin: 3.5rem auto;
+    background-color: var(--white);
+    padding: 1em;
+    border-radius: 0.75em;
+    border-bottom-right-radius: 5em;
+}
+
+.input-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    color: var(--smokey-grey);
+}
+
+input {
+    width: 90%;
+    padding: 0.5em 0 0.5em 0.5em;
+    color: var(--off-black);
+    border-radius: 0.25em;
+    border: 1px solid var(--light-grey);
+    margin-bottom: .25em;
+    position: sticky;
+}
+
+.btn-position {
+  position: relative;
+}
+
+.containers {
+    display: grid;
+    font-weight: var(--fw-bold);
+}
+
+.day {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.month {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.year {
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.output-container {
+    display: grid;
+    font-weight: var(--fw-very-bold);
+    font-style: var(--f-italic);
+    font-size: 2.5rem;
+    margin-top: 0.25em;
+}
+
+.btn {
+  background-color: var(--purple);
+  border: 1px solid var(--purple);
+  border-radius: 50%;
+  padding: 0.2em;
+  position: absolute;
+  left: 45%;
+  top: -1.5rem;
+}
+
+.output {
+  color: var(--purple);
+}
+
+.hidden {
+  visibility: hidden;
+  font-size: 0.45rem;
+}
+
+.invalid-date {
+  visibility: visible;
+  display: block;
+  color: var(--light-red);
+}
+
+.error {
+  color: var(--light-red);
+}
+
+.empty {
+  border: 1px solid var(--light-red);
+}
+
+.error-message {
+  color: var(--light-red);
+  visibility: visible;
+  display: grid;
+  font-size: 0.45rem;
+  margin-bottom: 3.5em;
+}
+
+
+
+.attribution { 
+  font-size: 11px; 
+  text-align: center; 
+}
+.attribution a { 
+  color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (width > 500px) and (width <= 768px) {
+  .main-container {
+    width: 60%;
+  }
+
+  .error-message {
+    font-size: .5rem;
+  }
+
+  .day {
+    font-size: 1.25rem;
+  }
+
+  .month {
+    font-size: 1.25rem;
+  }
+
+  .year {
+    font-size: 1.25rem;
+  }
+
+  .output-container {
+    font-size: 3rem;
+  }
+}
+
+@media screen and (width > 768px) and (width <= 1268px) {
+  .main-container {
+    width: 50%;
+  }
+
+  .error-message {
+    font-size: .7rem;
+  }
+
+  .day {
+    font-size: 1.5rem;
+  }
+
+  .month {
+    font-size: 1.5rem;
+  }
+
+  .year {
+    font-size: 1.5rem;
+  }
+
+  .output-container {
+    font-size: 3.5rem;
+  }
+
+  input {
+    font-size: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1268px) {
+  .main-container {
+    width: 30%;
+  }
+
+  .error-message {
+    font-size: .7rem;
+  }
+
+  .day {
+    font-size: 1.5rem;
+  }
+
+  .month {
+    font-size: 1.5rem;
+  }
+
+  .year {
+    font-size: 1.5rem;
+  }
+
+  .output-container {
+    font-size: 4rem;
+  }
+
+  .input-container {
+    width: 80%;
+  }
+
+  input {
+    font-size: 1.75rem;
+  }
+
+  hr {
+    width: 90%;
+  }
+
+  .btn {
+    top: -1.8rem;
+    left: 80%;
+    transition: transform 1s ease;
+    padding: 0.5em;
+    box-shadow: 0 0 15px var(--purple);
+    border: 1px solid var(--off-white);
+  }
+
+  input:focus-visible,
+  input:hover {
+    border: 1px solid var(--purple);
+    cursor: pointer;
+    transition: border 500ms ease-out;
+  }
+
+  .btn:hover {
+    cursor: pointer;
+    transform: rotate(360deg);
+    background-color: var(--off-black);
+    border: 1px solid var(--white);
+    box-shadow: 0 0 15px var(--off-black);
+  }
+
+}
