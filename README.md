@@ -1,6 +1,6 @@
 # Frontend Mentor - Age calculator app solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -38,8 +38,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [https://www.frontendmentor.io/solutions/age-calculator-MVzTg5yKqe]
+- Live Site URL: [https://age-calculator-mu-blush.vercel.app/]
 
 ## My process
 
@@ -57,7 +57,7 @@ Calculating the age with months and days had me going a bit to be honest. I lear
 
 The JS section is really something that I'm proud of. Building it in React would have been easier but less of a challenge
 
-Adding an animation to the Years, Month and Days was something
+Adding an animation to the Years, Month and Days was something new to me
 
 ### Continued development
 

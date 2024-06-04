@@ -43,6 +43,9 @@ body {
   font-style: var(--f-normal);
   font-family: var(--ff);
   background-color: var(--off-white);
+  height: 100dvh;
+  align-content: center;
+
 }
 /*
   5. Improve media defaults
@@ -66,7 +69,7 @@ p, h1, h2, h3, h4, h5, h6 {
 
 .main-container {
     width: 90%;
-    margin: 3.5rem auto;
+    margin-inline: auto;
     background-color: var(--white);
     padding: 1em;
     border-radius: 0.75em;
